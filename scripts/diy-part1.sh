@@ -16,6 +16,8 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Add feed sources
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
+sed -i '$a src-git MrH723 https://github.com/MrH723/openwrt-packages' feeds.conf.default
+sed -i '$a src-git nas https://github.com/linkease/nas-packages.git;master' feeds.conf.default
 
 # Add luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
